@@ -1,0 +1,85 @@
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local OuroHub = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local InfiniteYield = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local DarkHub = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
+
+
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+main.Position = UDim2.new(0.354381919, 0, 0.373029768, 0)
+main.Size = UDim2.new(0, 285, 0, 144)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+label.BackgroundTransparency = 1.000
+label.Position = UDim2.new(0.147368416, 0, 0.0416666679, 0)
+label.Size = UDim2.new(0, 200, 0, 23)
+label.Font = Enum.Font.GothamBold
+label.Text = "Kaze Scripts"
+label.TextColor3 = Color3.fromRGB(255, 197, 48)
+label.TextScaled = true
+label.TextSize = 14.000
+label.TextWrapped = true
+
+OuroHub.Name = "Ouro Hub"
+OuroHub.Parent = main
+OuroHub.BackgroundColor3 = Color3.fromRGB(255, 197, 48)
+OuroHub.Position = UDim2.new(0.0350877196, 0, 0.270833343, 0)
+OuroHub.Size = UDim2.new(0, 125, 0, 29)
+OuroHub.Font = Enum.Font.GothamBold
+OuroHub.Text = "Ouro Hub"
+OuroHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+OuroHub.TextSize = 18.000
+OuroHub.TextWrapped = true
+OuroHub.MouseButton1Down:connect(function()
+	getgenv().wl_key = "9qUnZhk3Hpq4FYC3-R1X0J2sq-SXcnheLJMpFrINwD"
+	loadstring(game:HttpGet("https://ouro-hub.xyz/script/main.lua?Key="..getgenv().wl_key))()
+end)
+
+UICorner.Parent = OuroHub
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = main
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 197, 48)
+InfiniteYield.Position = UDim2.new(0.522807002, 0, 0.270833343, 0)
+InfiniteYield.Size = UDim2.new(0, 125, 0, 29)
+InfiniteYield.Font = Enum.Font.GothamBold
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.TextSize = 18.000
+InfiniteYield.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+UICorner_2.Parent = InfiniteYield
+
+DarkHub.Name = "Dark Hub"
+DarkHub.Parent = main
+DarkHub.BackgroundColor3 = Color3.fromRGB(255, 197, 48)
+DarkHub.Position = UDim2.new(0.0315789282, 0, 0.548611164, 0)
+DarkHub.Size = UDim2.new(0, 125, 0, 29)
+DarkHub.Font = Enum.Font.GothamBold
+DarkHub.Text = "Dark Hub"
+DarkHub.TextColor3 = Color3.fromRGB(255, 255, 255)
+DarkHub.TextSize = 18.000
+DarkHub.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end)
+
+UICorner_3.Parent = DarkHub
+
+UICorner_4.Parent = main
